@@ -67,39 +67,39 @@ def health_check():
     }
 
 @app.post("/recommend", response_model=RecommendationResponse)
+@app.post("/recommend")
 def get_recommendations(request: QueryRequest):
-    """
-    Get assessment recommendations (REQUIRED by assignment)
-    
-    Returns 5-10 most relevant assessments with balanced type distribution
-    """
     try:
         if not request.query or not request.query.strip():
             raise HTTPException(status_code=400, detail="Query cannot be empty")
         
         recommendations = recommender.recommend(request.query, top_k=10)
         
-        formatted_recs = [
-            AssessmentResponse(
-                name=rec['name'],
-                url=rec['url'],
-                test_type=rec['test_type'],
-                duration_mins=int(rec['duration_mins']),
-                skills=rec['skills'],
-                description=rec['description'],
-                relevance_score=round(float(rec['similarity']), 4)
-            )
-            for rec in recommendations
-        ]
+        type_map = {
+            'K': ["Knowledge & Skills"],
+            'P': ["Personality & Behaviour"],
+            'A': ["Ability & Aptitude"],
+            'B': ["Biodata & SJT"]
+        }
         
-        return RecommendationResponse(
-            query=request.query,
-            count=len(formatted_recs),
-            recommendations=formatted_recs
-        )
+        result = []
+        for rec in recommendations:
+            result.append({
+                "url": rec['url'],
+                "name": rec['name'],
+                "adaptive_support": rec.get('adaptive_support', 'No'),
+                "description": rec['description'],
+                "duration": int(rec['duration_mins']),
+                "remote_support": rec.get('remote_support', 'Yes'),
+                "test_type": type_map.get(rec['test_type'], ["Other"])
+            })
+        
+        return {"recommended_assessments": result}
     
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error: {str(e)}")
+
+
 
 if __name__ == "__main__":
     print("\n" + "="*80)

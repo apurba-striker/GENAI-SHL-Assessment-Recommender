@@ -15,7 +15,6 @@ class AssessmentRecommender:
         self.model = SentenceTransformer('all-MiniLM-L6-v2')
         print(" Model loaded successfully")
         
-        # Try to load pre-computed embeddings
         if not self.load_embeddings():
             self._build_embeddings_index()
     
@@ -23,23 +22,20 @@ class AssessmentRecommender:
         """Build semantic search index using transformer embeddings"""
         print(" Building embeddings index...")
         
-        # Create rich search texts (emphasize name and skills)
         search_texts = self.assessments_df.apply(
             lambda x: f"{x['name']} {x['name']} {x['skills']} {x['skills']} {x['description']} test type {x['test_type']}",
             axis=1
         ).tolist()
         
-        # Generate embeddings using sentence-transformers
         self.assessment_vectors = self.model.encode(
             search_texts,
             show_progress_bar=True,
             batch_size=32,
-            normalize_embeddings=True  # Normalize for cosine similarity
+            normalize_embeddings=True  
         )
         
         print(f" Built embeddings index: {self.assessment_vectors.shape}")
         
-        # Save embeddings
         os.makedirs('./models', exist_ok=True)
         with open('./models/transformer_embeddings.pkl', 'wb') as f:
             pickle.dump(self.assessment_vectors, f)
@@ -58,10 +54,8 @@ class AssessmentRecommender:
         """Extract requirements from natural language query"""
         query_lower = query.lower()
         
-        # Extract duration constraint - FIXED VERSION
         max_duration = None
         
-        # Try different patterns with their multipliers
         duration_patterns = [
             (r'(\d+)\s*[-]?\s*(\d+)?\s*(min|minute)s?', 1),
             (r'(\d+)\s*[-]?\s*(\d+)?\s*(hour|hr)s?', 60),
@@ -81,21 +75,17 @@ class AssessmentRecommender:
                 max_duration = int(match.group(1)) * multiplier
                 break
         
-        # Detect technical skills
         tech_keywords = ['java', 'python', 'sql', 'javascript', 'js', 'programming',
                          'coding', 'technical', 'excel', 'development', 'engineer',
                          'developer', 'software', 'data analyst', 'analyst', 'sales']
         
-        # Detect soft skills/personality
         soft_keywords = ['communication', 'personality', 'leadership', 'behavior',
                          'cultural', 'collaborate', 'interpersonal', 'emotional',
                          'team', 'social', 'motivat', 'cultural fit']
         
-        # Detect cognitive/aptitude
         cognitive_keywords = ['cognitive', 'aptitude', 'reasoning', 'numerical',
                              'verbal', 'analytical', 'problem solving', 'logic']
         
-        # Detect experience level
         entry_keywords = ['new graduate', 'graduate', 'entry', 'fresher', 'junior']
         has_entry = any(kw in query_lower for kw in entry_keywords)
         
@@ -118,59 +108,45 @@ class AssessmentRecommender:
         
         Returns 5-10 assessments with balanced type distribution if needed
         """
-        # Parse query
         reqs = self.extract_requirements(query)
         
-        # Generate query embedding
         query_vector = self.model.encode([query], normalize_embeddings=True)[0].reshape(1, -1)
         
-        # Calculate semantic similarities
         similarities = cosine_similarity(query_vector, self.assessment_vectors).flatten()
         
-        # Create results dataframe
         results = self.assessments_df.copy()
         results['similarity'] = similarities
         
-        # Apply duration filter
         if reqs['max_duration']:
             filtered = results[results['duration_mins'] <= reqs['max_duration']]
             if len(filtered) >= 5:
                 results = filtered
             else:
-                # Relax constraint slightly if too few results
                 results = results[results['duration_mins'] <= reqs['max_duration'] + 10]
         
-        # Prefer entry-level tests if specified
         if reqs['is_entry_level']:
             results['boost'] = results['name'].str.lower().str.contains('entry|graduate|junior').astype(float) * 0.1
             results['similarity'] = results['similarity'] + results['boost']
         
-        # Sort by similarity
         results = results.sort_values('similarity', ascending=False)
         
-        # CRITICAL: Balance test types for mixed queries
         if reqs['needs_balanced']:
-            # Get top K and P assessments separately
             k_assessments = results[results['test_type'] == 'K'].head(5)
             p_assessments = results[results['test_type'] == 'P'].head(5)
             
-            # Include cognitive if needed
             if reqs['needs_cognitive']:
                 a_assessments = results[results['test_type'] == 'A'].head(3)
                 balanced = pd.concat([k_assessments, p_assessments, a_assessments])
             else:
                 balanced = pd.concat([k_assessments, p_assessments])
             
-            # Remove duplicates and re-sort
             results = balanced.drop_duplicates(subset=['url']).sort_values('similarity', ascending=False)
         
-        # Return 5-10 results (assignment requirement)
         final_count = max(5, min(10, len(results)))
         final_results = results.head(final_count)
         
         return final_results.to_dict('records')
 
-# Testing
 if __name__ == "__main__":
     print("="*80)
     print("TESTING ASSESSMENT RECOMMENDER")
@@ -178,7 +154,6 @@ if __name__ == "__main__":
     
     recommender = AssessmentRecommender()
     
-    # Test queries
     test_queries = [
         "Java developer with communication skills",
         "Sales assessment for new graduates under 1 hour",

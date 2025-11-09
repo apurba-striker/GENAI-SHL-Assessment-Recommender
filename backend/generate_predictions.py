@@ -11,14 +11,11 @@ def calculate_recall_at_k(train_df, recommender, k=10):
     print('='*80)
     
     for idx, query in enumerate(train_df['Query'].unique(), 1):
-        # Ground truth URLs
         true_urls = set(train_df[train_df['Query'] == query]['Assessment_url'])
         
-        # Get predictions
         predictions = recommender.recommend(query, top_k=k)
         pred_urls = set([p['url'] for p in predictions])
         
-        # Calculate recall
         intersection = true_urls.intersection(pred_urls)
         recall = len(intersection) / len(true_urls) if true_urls else 0
         recalls.append(recall)
@@ -54,11 +51,8 @@ def generate_test_predictions(test_df, recommender, output_path='../data/test_pr
         print(f"\n🔍 Query {idx}/{len(test_df)}:")
         print(f"   {query[:100]}...")
         
-        # Get recommendations (top 10 to choose from)
         recs = recommender.recommend(query, top_k=10)
         
-        # CRITICAL: Ensure we have at least 5 unique recommendations
-        # Remove duplicates while preserving order
         unique_recs = []
         seen_urls = set()
         
@@ -66,12 +60,9 @@ def generate_test_predictions(test_df, recommender, output_path='../data/test_pr
             if rec['url'] not in seen_urls:
                 unique_recs.append(rec)
                 seen_urls.add(rec['url'])
-        
-        # If we have less than 5, get more from all assessments
         if len(unique_recs) < 5:
             print(f"     Only {len(unique_recs)} unique recommendations, getting more...")
             
-            # Get all assessments sorted by similarity
             from sklearn.metrics.pairwise import cosine_similarity
             query_vector = recommender.model.encode([query], normalize_embeddings=True)[0].reshape(1, -1)
             similarities = cosine_similarity(query_vector, recommender.assessment_vectors).flatten()
@@ -80,7 +71,6 @@ def generate_test_predictions(test_df, recommender, output_path='../data/test_pr
             all_results['similarity'] = similarities
             all_results = all_results.sort_values('similarity', ascending=False)
             
-            # Add more unique recommendations
             for _, row in all_results.iterrows():
                 if row['url'] not in seen_urls:
                     unique_recs.append(row.to_dict())
@@ -88,23 +78,19 @@ def generate_test_predictions(test_df, recommender, output_path='../data/test_pr
                     if len(unique_recs) >= 10:
                         break
         
-        # Take exactly 5-10 recommendations (prefer closer to 10 if available)
         num_recs = min(10, max(5, len(unique_recs)))
         final_recs = unique_recs[:num_recs]
         
         print(f"   Generated {num_recs} unique recommendations")
-        
-        # Add to predictions list
+
         for rec in final_recs:
             predictions.append({
                 'Query': query,
                 'Assessment_url': rec['url']
             })
     
-    # Create DataFrame
     predictions_df = pd.DataFrame(predictions)
     
-    # Final validation
     print(f"\n{'='*80}")
     print(" VALIDATION")
     print('='*80)
@@ -114,7 +100,6 @@ def generate_test_predictions(test_df, recommender, output_path='../data/test_pr
         status = "Yes" if 5 <= count <= 10 else "No"
         print(f"{status} {count} recommendations for: {query[:60]}...")
     
-    # Check for duplicates
     has_duplicates = False
     for query in test_df['Query']:
         query_df = predictions_df[predictions_df['Query'] == query]
@@ -126,7 +111,6 @@ def generate_test_predictions(test_df, recommender, output_path='../data/test_pr
     if not has_duplicates:
         print("No duplicate URLs per query")
     
-    # Save to CSV
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     predictions_df.to_csv(output_path, index=False)
     
@@ -138,7 +122,7 @@ def generate_test_predictions(test_df, recommender, output_path='../data/test_pr
     print(f" Queries: {test_df['Query'].nunique()}")
     print(f" Average: {len(predictions_df)/test_df['Query'].nunique():.1f} per query")
     
-    # Show sample
+ 
     print(f"\n{'='*80}")
     print("SAMPLE OUTPUT (First Query)")
     print('='*80)

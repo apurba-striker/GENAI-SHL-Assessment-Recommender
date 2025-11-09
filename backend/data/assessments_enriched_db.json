@@ -6,7 +6,9 @@
     "test_type":"K",
     "duration_mins":30,
     "skills":"General Skills",
-    "description":"Technical skills assessment measuring knowledge and proficiency in Automata Fix New"
+    "description":"Technical skills assessment measuring knowledge and proficiency in Automata Fix New",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":2,
@@ -15,7 +17,9 @@
     "test_type":"K",
     "duration_mins":20,
     "skills":"Java",
-    "description":"Technical skills assessment measuring knowledge and proficiency in Core Java Entry Level New"
+    "description":"Technical skills assessment measuring knowledge and proficiency in Core Java Entry Level New",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":3,
@@ -24,7 +28,9 @@
     "test_type":"K",
     "duration_mins":35,
     "skills":"Java",
-    "description":"Technical skills assessment measuring knowledge and proficiency in Java 8 New"
+    "description":"Technical skills assessment measuring knowledge and proficiency in Java 8 New",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":4,
@@ -33,7 +39,9 @@
     "test_type":"K",
     "duration_mins":60,
     "skills":"Java",
-    "description":"Technical skills assessment measuring knowledge and proficiency in Core Java Advanced Level New"
+    "description":"Technical skills assessment measuring knowledge and proficiency in Core Java Advanced Level New",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":5,
@@ -42,7 +50,9 @@
     "test_type":"P",
     "duration_mins":30,
     "skills":"Communication, Interpersonal Skills",
-    "description":"Personality and behavioral assessment evaluating traits for Interpersonal Communications"
+    "description":"Personality and behavioral assessment evaluating traits for Interpersonal Communications",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":6,
@@ -51,7 +61,9 @@
     "test_type":"B",
     "duration_mins":20,
     "skills":"Sales",
-    "description":"Situational judgment test assessing decision-making for Entry Level Sales 7 1"
+    "description":"Situational judgment test assessing decision-making for Entry Level Sales 7 1",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":7,
@@ -60,7 +72,9 @@
     "test_type":"B",
     "duration_mins":20,
     "skills":"Sales",
-    "description":"Situational judgment test assessing decision-making for Entry Level Sales Sift Out 7 1"
+    "description":"Situational judgment test assessing decision-making for Entry Level Sales Sift Out 7 1",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":8,
@@ -69,7 +83,9 @@
     "test_type":"B",
     "duration_mins":20,
     "skills":"Sales",
-    "description":"Situational judgment test assessing decision-making for Entry Level Sales Solution"
+    "description":"Situational judgment test assessing decision-making for Entry Level Sales Solution",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":9,
@@ -78,7 +94,9 @@
     "test_type":"B",
     "duration_mins":30,
     "skills":"Sales",
-    "description":"Situational judgment test assessing decision-making for Sales Representative Solution"
+    "description":"Situational judgment test assessing decision-making for Sales Representative Solution",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":10,
@@ -87,7 +105,9 @@
     "test_type":"P",
     "duration_mins":40,
     "skills":"Communication",
-    "description":"Personality and behavioral assessment evaluating traits for Business Communication Adaptive"
+    "description":"Personality and behavioral assessment evaluating traits for Business Communication Adaptive",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":11,
@@ -96,7 +116,9 @@
     "test_type":"K",
     "duration_mins":30,
     "skills":"Sales",
-    "description":"Technical skills assessment measuring knowledge and proficiency in Technical Sales Associate Solution"
+    "description":"Technical skills assessment measuring knowledge and proficiency in Technical Sales Associate Solution",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":12,
@@ -105,7 +127,9 @@
     "test_type":"K",
     "duration_mins":30,
     "skills":"English",
-    "description":"Technical skills assessment measuring knowledge and proficiency in Svar Spoken English Indian Accent New"
+    "description":"Technical skills assessment measuring knowledge and proficiency in Svar Spoken English Indian Accent New",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":13,
@@ -114,7 +138,9 @@
     "test_type":"K",
     "duration_mins":30,
     "skills":"English",
-    "description":"Technical skills assessment measuring knowledge and proficiency in English Comprehension New"
+    "description":"Technical skills assessment measuring knowledge and proficiency in English Comprehension New",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":14,
@@ -123,7 +149,9 @@
     "test_type":"P",
     "duration_mins":30,
     "skills":"Leadership",
-    "description":"Personality and behavioral assessment evaluating traits for Enterprise Leadership Report"
+    "description":"Personality and behavioral assessment evaluating traits for Enterprise Leadership Report",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":15,
@@ -132,7 +160,9 @@
     "test_type":"P",
     "duration_mins":35,
     "skills":"General Skills",
-    "description":"Personality and behavioral assessment evaluating traits for Occupational Personality Questionnaire Opq32R"
+    "description":"Personality and behavioral assessment evaluating traits for Occupational Personality Questionnaire Opq32R",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":16,
@@ -141,7 +171,9 @@
     "test_type":"P",
     "duration_mins":35,
     "skills":"Leadership",
-    "description":"Personality and behavioral assessment evaluating traits for Opq Leadership Report"
+    "description":"Personality and behavioral assessment evaluating traits for Opq Leadership Report",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":17,
@@ -150,7 +182,9 @@
     "test_type":"P",
     "duration_mins":35,
     "skills":"Leadership",
-    "description":"Personality and behavioral assessment evaluating traits for Opq Team Types And Leadership Styles Report"
+    "description":"Personality and behavioral assessment evaluating traits for Opq Team Types And Leadership Styles Report",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":18,
@@ -159,7 +193,9 @@
     "test_type":"P",
     "duration_mins":30,
     "skills":"Leadership",
-    "description":"Personality and behavioral assessment evaluating traits for Enterprise Leadership Report 2 0"
+    "description":"Personality and behavioral assessment evaluating traits for Enterprise Leadership Report 2 0",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":19,
@@ -168,7 +204,9 @@
     "test_type":"K",
     "duration_mins":30,
     "skills":"General Skills",
-    "description":"Technical skills assessment measuring knowledge and proficiency in Global Skills Assessment"
+    "description":"Technical skills assessment measuring knowledge and proficiency in Global Skills Assessment",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":20,
@@ -177,7 +215,9 @@
     "test_type":"A",
     "duration_mins":30,
     "skills":"General Skills",
-    "description":"Cognitive ability test measuring reasoning and problem-solving for Verify Verbal Ability Next Generation"
+    "description":"Cognitive ability test measuring reasoning and problem-solving for Verify Verbal Ability Next Generation",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":21,
@@ -186,7 +226,9 @@
     "test_type":"A",
     "duration_mins":30,
     "skills":"General Skills",
-    "description":"Cognitive ability test measuring reasoning and problem-solving for Shl Verify Interactive Inductive Reasoning"
+    "description":"Cognitive ability test measuring reasoning and problem-solving for Shl Verify Interactive Inductive Reasoning",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":22,
@@ -195,7 +237,9 @@
     "test_type":"K",
     "duration_mins":30,
     "skills":"General Skills",
-    "description":"Technical skills assessment measuring knowledge and proficiency in Marketing New"
+    "description":"Technical skills assessment measuring knowledge and proficiency in Marketing New",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":23,
@@ -204,7 +248,9 @@
     "test_type":"K",
     "duration_mins":30,
     "skills":"English",
-    "description":"Technical skills assessment measuring knowledge and proficiency in English Comprehension New"
+    "description":"Technical skills assessment measuring knowledge and proficiency in English Comprehension New",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":24,
@@ -213,7 +259,9 @@
     "test_type":"K",
     "duration_mins":30,
     "skills":"Drupal",
-    "description":"Technical skills assessment measuring knowledge and proficiency in Drupal New"
+    "description":"Technical skills assessment measuring knowledge and proficiency in Drupal New",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":25,
@@ -222,7 +270,9 @@
     "test_type":"K",
     "duration_mins":30,
     "skills":"English",
-    "description":"Technical skills assessment measuring knowledge and proficiency in Written English V1"
+    "description":"Technical skills assessment measuring knowledge and proficiency in Written English V1",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":26,
@@ -231,7 +281,9 @@
     "test_type":"P",
     "duration_mins":35,
     "skills":"General Skills",
-    "description":"Personality and behavioral assessment evaluating traits for Occupational Personality Questionnaire Opq32R"
+    "description":"Personality and behavioral assessment evaluating traits for Occupational Personality Questionnaire Opq32R",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":27,
@@ -240,7 +292,9 @@
     "test_type":"K",
     "duration_mins":30,
     "skills":"General Skills",
-    "description":"Technical skills assessment measuring knowledge and proficiency in Search Engine Optimization New"
+    "description":"Technical skills assessment measuring knowledge and proficiency in Search Engine Optimization New",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":28,
@@ -249,7 +303,9 @@
     "test_type":"K",
     "duration_mins":30,
     "skills":"Selenium",
-    "description":"Technical skills assessment measuring knowledge and proficiency in Automata Selenium"
+    "description":"Technical skills assessment measuring knowledge and proficiency in Automata Selenium",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":29,
@@ -258,7 +314,9 @@
     "test_type":"K",
     "duration_mins":30,
     "skills":"General Skills",
-    "description":"Technical skills assessment measuring knowledge and proficiency in Professional 7 1 Solution"
+    "description":"Technical skills assessment measuring knowledge and proficiency in Professional 7 1 Solution",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":30,
@@ -267,7 +325,9 @@
     "test_type":"K",
     "duration_mins":35,
     "skills":"Java, JavaScript",
-    "description":"Technical skills assessment measuring knowledge and proficiency in Javascript New"
+    "description":"Technical skills assessment measuring knowledge and proficiency in Javascript New",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":31,
@@ -276,7 +336,9 @@
     "test_type":"K",
     "duration_mins":30,
     "skills":"General Skills",
-    "description":"Technical skills assessment measuring knowledge and proficiency in Htmlcss New"
+    "description":"Technical skills assessment measuring knowledge and proficiency in Htmlcss New",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":32,
@@ -285,7 +347,9 @@
     "test_type":"K",
     "duration_mins":30,
     "skills":"General Skills",
-    "description":"Technical skills assessment measuring knowledge and proficiency in Css3 New"
+    "description":"Technical skills assessment measuring knowledge and proficiency in Css3 New",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":33,
@@ -294,7 +358,9 @@
     "test_type":"K",
     "duration_mins":30,
     "skills":"Selenium",
-    "description":"Technical skills assessment measuring knowledge and proficiency in Selenium New"
+    "description":"Technical skills assessment measuring knowledge and proficiency in Selenium New",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":34,
@@ -303,7 +369,9 @@
     "test_type":"K",
     "duration_mins":35,
     "skills":"SQL",
-    "description":"Technical skills assessment measuring knowledge and proficiency in Sql Server New"
+    "description":"Technical skills assessment measuring knowledge and proficiency in Sql Server New",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":35,
@@ -312,7 +380,9 @@
     "test_type":"K",
     "duration_mins":35,
     "skills":"SQL",
-    "description":"Technical skills assessment measuring knowledge and proficiency in Automata Sql New"
+    "description":"Technical skills assessment measuring knowledge and proficiency in Automata Sql New",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":36,
@@ -321,7 +391,9 @@
     "test_type":"K",
     "duration_mins":30,
     "skills":"General Skills",
-    "description":"Technical skills assessment measuring knowledge and proficiency in Manual Testing New"
+    "description":"Technical skills assessment measuring knowledge and proficiency in Manual Testing New",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":37,
@@ -330,7 +402,9 @@
     "test_type":"K",
     "duration_mins":20,
     "skills":"General Skills",
-    "description":"Technical skills assessment measuring knowledge and proficiency in Administrative Professional Short Form"
+    "description":"Technical skills assessment measuring knowledge and proficiency in Administrative Professional Short Form",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":38,
@@ -339,7 +413,9 @@
     "test_type":"A",
     "duration_mins":30,
     "skills":"General Skills",
-    "description":"Cognitive ability test measuring reasoning and problem-solving for Verify Numerical Ability"
+    "description":"Cognitive ability test measuring reasoning and problem-solving for Verify Numerical Ability",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":39,
@@ -348,7 +424,9 @@
     "test_type":"K",
     "duration_mins":20,
     "skills":"General Skills",
-    "description":"Technical skills assessment measuring knowledge and proficiency in Financial Professional Short Form"
+    "description":"Technical skills assessment measuring knowledge and proficiency in Financial Professional Short Form",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":40,
@@ -357,7 +435,9 @@
     "test_type":"K",
     "duration_mins":20,
     "skills":"General Skills",
-    "description":"Technical skills assessment measuring knowledge and proficiency in Bank Administrative Assistant Short Form"
+    "description":"Technical skills assessment measuring knowledge and proficiency in Bank Administrative Assistant Short Form",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":41,
@@ -366,7 +446,9 @@
     "test_type":"K",
     "duration_mins":20,
     "skills":"Data Entry",
-    "description":"Technical skills assessment measuring knowledge and proficiency in General Entry Level Data Entry 7 0 Solution"
+    "description":"Technical skills assessment measuring knowledge and proficiency in General Entry Level Data Entry 7 0 Solution",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":42,
@@ -375,7 +457,9 @@
     "test_type":"K",
     "duration_mins":30,
     "skills":"General Skills",
-    "description":"Technical skills assessment measuring knowledge and proficiency in Basic Computer Literacy Windows 10 New"
+    "description":"Technical skills assessment measuring knowledge and proficiency in Basic Computer Literacy Windows 10 New",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":43,
@@ -384,7 +468,9 @@
     "test_type":"K",
     "duration_mins":30,
     "skills":"General Skills",
-    "description":"Technical skills assessment measuring knowledge and proficiency in Manager 8 0 Jfa 4310"
+    "description":"Technical skills assessment measuring knowledge and proficiency in Manager 8 0 Jfa 4310",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":44,
@@ -393,7 +479,9 @@
     "test_type":"K",
     "duration_mins":30,
     "skills":"Excel",
-    "description":"Technical skills assessment measuring knowledge and proficiency in Microsoft Excel 365 Essentials New"
+    "description":"Technical skills assessment measuring knowledge and proficiency in Microsoft Excel 365 Essentials New",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":45,
@@ -402,7 +490,9 @@
     "test_type":"K",
     "duration_mins":30,
     "skills":"General Skills",
-    "description":"Technical skills assessment measuring knowledge and proficiency in Digital Advertising New"
+    "description":"Technical skills assessment measuring knowledge and proficiency in Digital Advertising New",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":46,
@@ -411,7 +501,9 @@
     "test_type":"B",
     "duration_mins":30,
     "skills":"Sales",
-    "description":"Situational judgment test assessing decision-making for Writex Email Writing Sales New"
+    "description":"Situational judgment test assessing decision-making for Writex Email Writing Sales New",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":47,
@@ -420,7 +512,9 @@
     "test_type":"A",
     "duration_mins":30,
     "skills":"General Skills",
-    "description":"Cognitive ability test measuring reasoning and problem-solving for Shl Verify Interactive Numerical Calculation"
+    "description":"Cognitive ability test measuring reasoning and problem-solving for Shl Verify Interactive Numerical Calculation",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":48,
@@ -429,7 +523,9 @@
     "test_type":"K",
     "duration_mins":30,
     "skills":"General Skills",
-    "description":"Technical skills assessment measuring knowledge and proficiency in Professional 7 1 Solution"
+    "description":"Technical skills assessment measuring knowledge and proficiency in Professional 7 1 Solution",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":49,
@@ -438,7 +534,9 @@
     "test_type":"K",
     "duration_mins":35,
     "skills":"SQL",
-    "description":"Technical skills assessment measuring knowledge and proficiency in Sql Server Analysis Services (Ssas) (New)"
+    "description":"Technical skills assessment measuring knowledge and proficiency in Sql Server Analysis Services (Ssas) (New)",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":50,
@@ -447,7 +545,9 @@
     "test_type":"K",
     "duration_mins":35,
     "skills":"Python",
-    "description":"Technical skills assessment measuring knowledge and proficiency in Python New"
+    "description":"Technical skills assessment measuring knowledge and proficiency in Python New",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":51,
@@ -456,7 +556,9 @@
     "test_type":"K",
     "duration_mins":30,
     "skills":"General Skills",
-    "description":"Technical skills assessment measuring knowledge and proficiency in Tableau New"
+    "description":"Technical skills assessment measuring knowledge and proficiency in Tableau New",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":52,
@@ -465,7 +567,9 @@
     "test_type":"K",
     "duration_mins":30,
     "skills":"Excel",
-    "description":"Technical skills assessment measuring knowledge and proficiency in Microsoft Excel 365 New"
+    "description":"Technical skills assessment measuring knowledge and proficiency in Microsoft Excel 365 New",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":53,
@@ -474,7 +578,9 @@
     "test_type":"K",
     "duration_mins":30,
     "skills":"General Skills",
-    "description":"Technical skills assessment measuring knowledge and proficiency in Professional 7 0 Solution 3958"
+    "description":"Technical skills assessment measuring knowledge and proficiency in Professional 7 0 Solution 3958",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   },
   {
     "id":54,
@@ -483,6 +589,8 @@
     "test_type":"K",
     "duration_mins":30,
     "skills":"General Skills",
-    "description":"Technical skills assessment measuring knowledge and proficiency in Data Warehousing Concepts"
+    "description":"Technical skills assessment measuring knowledge and proficiency in Data Warehousing Concepts",
+    "adaptive_support":"Yes",
+    "remote_support":"Yes"
   }
 ]
