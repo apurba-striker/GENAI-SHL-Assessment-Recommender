@@ -22,7 +22,7 @@ app.add_middleware(
 
 # Initialize recommender
 print("🚀 Initializing Assessment Recommender...")
-recommender = AssessmentRecommender(db_path='../data/assessments_enriched_db.csv')
+recommender = AssessmentRecommender(db_path='./data/assessments_enriched_db.csv')
 print("✅ Recommender ready!")
 
 # Request/Response models

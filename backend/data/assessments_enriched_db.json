@@ -1,0 +1,488 @@
+[
+  {
+    "id":1,
+    "name":"Automata Fix New",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/automata-fix-new\/",
+    "test_type":"K",
+    "duration_mins":30,
+    "skills":"General Skills",
+    "description":"Technical skills assessment measuring knowledge and proficiency in Automata Fix New"
+  },
+  {
+    "id":2,
+    "name":"Core Java Entry Level New",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/core-java-entry-level-new\/",
+    "test_type":"K",
+    "duration_mins":20,
+    "skills":"Java",
+    "description":"Technical skills assessment measuring knowledge and proficiency in Core Java Entry Level New"
+  },
+  {
+    "id":3,
+    "name":"Java 8 New",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/java-8-new\/",
+    "test_type":"K",
+    "duration_mins":35,
+    "skills":"Java",
+    "description":"Technical skills assessment measuring knowledge and proficiency in Java 8 New"
+  },
+  {
+    "id":4,
+    "name":"Core Java Advanced Level New",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/core-java-advanced-level-new\/",
+    "test_type":"K",
+    "duration_mins":60,
+    "skills":"Java",
+    "description":"Technical skills assessment measuring knowledge and proficiency in Core Java Advanced Level New"
+  },
+  {
+    "id":5,
+    "name":"Interpersonal Communications",
+    "url":"https:\/\/www.shl.com\/products\/product-catalog\/view\/interpersonal-communications\/",
+    "test_type":"P",
+    "duration_mins":30,
+    "skills":"Communication, Interpersonal Skills",
+    "description":"Personality and behavioral assessment evaluating traits for Interpersonal Communications"
+  },
+  {
+    "id":6,
+    "name":"Entry Level Sales 7 1",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/entry-level-sales-7-1\/",
+    "test_type":"B",
+    "duration_mins":20,
+    "skills":"Sales",
+    "description":"Situational judgment test assessing decision-making for Entry Level Sales 7 1"
+  },
+  {
+    "id":7,
+    "name":"Entry Level Sales Sift Out 7 1",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/entry-level-sales-sift-out-7-1\/",
+    "test_type":"B",
+    "duration_mins":20,
+    "skills":"Sales",
+    "description":"Situational judgment test assessing decision-making for Entry Level Sales Sift Out 7 1"
+  },
+  {
+    "id":8,
+    "name":"Entry Level Sales Solution",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/entry-level-sales-solution\/",
+    "test_type":"B",
+    "duration_mins":20,
+    "skills":"Sales",
+    "description":"Situational judgment test assessing decision-making for Entry Level Sales Solution"
+  },
+  {
+    "id":9,
+    "name":"Sales Representative Solution",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/sales-representative-solution\/",
+    "test_type":"B",
+    "duration_mins":30,
+    "skills":"Sales",
+    "description":"Situational judgment test assessing decision-making for Sales Representative Solution"
+  },
+  {
+    "id":10,
+    "name":"Business Communication Adaptive",
+    "url":"https:\/\/www.shl.com\/products\/product-catalog\/view\/business-communication-adaptive\/",
+    "test_type":"P",
+    "duration_mins":40,
+    "skills":"Communication",
+    "description":"Personality and behavioral assessment evaluating traits for Business Communication Adaptive"
+  },
+  {
+    "id":11,
+    "name":"Technical Sales Associate Solution",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/technical-sales-associate-solution\/",
+    "test_type":"K",
+    "duration_mins":30,
+    "skills":"Sales",
+    "description":"Technical skills assessment measuring knowledge and proficiency in Technical Sales Associate Solution"
+  },
+  {
+    "id":12,
+    "name":"Svar Spoken English Indian Accent New",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/svar-spoken-english-indian-accent-new\/",
+    "test_type":"K",
+    "duration_mins":30,
+    "skills":"English",
+    "description":"Technical skills assessment measuring knowledge and proficiency in Svar Spoken English Indian Accent New"
+  },
+  {
+    "id":13,
+    "name":"English Comprehension New",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/english-comprehension-new\/",
+    "test_type":"K",
+    "duration_mins":30,
+    "skills":"English",
+    "description":"Technical skills assessment measuring knowledge and proficiency in English Comprehension New"
+  },
+  {
+    "id":14,
+    "name":"Enterprise Leadership Report",
+    "url":"https:\/\/www.shl.com\/products\/product-catalog\/view\/enterprise-leadership-report\/",
+    "test_type":"P",
+    "duration_mins":30,
+    "skills":"Leadership",
+    "description":"Personality and behavioral assessment evaluating traits for Enterprise Leadership Report"
+  },
+  {
+    "id":15,
+    "name":"Occupational Personality Questionnaire Opq32R",
+    "url":"https:\/\/www.shl.com\/products\/product-catalog\/view\/occupational-personality-questionnaire-opq32r\/",
+    "test_type":"P",
+    "duration_mins":35,
+    "skills":"General Skills",
+    "description":"Personality and behavioral assessment evaluating traits for Occupational Personality Questionnaire Opq32R"
+  },
+  {
+    "id":16,
+    "name":"Opq Leadership Report",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/opq-leadership-report\/",
+    "test_type":"P",
+    "duration_mins":35,
+    "skills":"Leadership",
+    "description":"Personality and behavioral assessment evaluating traits for Opq Leadership Report"
+  },
+  {
+    "id":17,
+    "name":"Opq Team Types And Leadership Styles Report",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/opq-team-types-and-leadership-styles-report",
+    "test_type":"P",
+    "duration_mins":35,
+    "skills":"Leadership",
+    "description":"Personality and behavioral assessment evaluating traits for Opq Team Types And Leadership Styles Report"
+  },
+  {
+    "id":18,
+    "name":"Enterprise Leadership Report 2 0",
+    "url":"https:\/\/www.shl.com\/products\/product-catalog\/view\/enterprise-leadership-report-2-0\/",
+    "test_type":"P",
+    "duration_mins":30,
+    "skills":"Leadership",
+    "description":"Personality and behavioral assessment evaluating traits for Enterprise Leadership Report 2 0"
+  },
+  {
+    "id":19,
+    "name":"Global Skills Assessment",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/global-skills-assessment\/",
+    "test_type":"K",
+    "duration_mins":30,
+    "skills":"General Skills",
+    "description":"Technical skills assessment measuring knowledge and proficiency in Global Skills Assessment"
+  },
+  {
+    "id":20,
+    "name":"Verify Verbal Ability Next Generation",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/verify-verbal-ability-next-generation\/",
+    "test_type":"A",
+    "duration_mins":30,
+    "skills":"General Skills",
+    "description":"Cognitive ability test measuring reasoning and problem-solving for Verify Verbal Ability Next Generation"
+  },
+  {
+    "id":21,
+    "name":"Shl Verify Interactive Inductive Reasoning",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/shl-verify-interactive-inductive-reasoning\/",
+    "test_type":"A",
+    "duration_mins":30,
+    "skills":"General Skills",
+    "description":"Cognitive ability test measuring reasoning and problem-solving for Shl Verify Interactive Inductive Reasoning"
+  },
+  {
+    "id":22,
+    "name":"Marketing New",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/marketing-new\/",
+    "test_type":"K",
+    "duration_mins":30,
+    "skills":"General Skills",
+    "description":"Technical skills assessment measuring knowledge and proficiency in Marketing New"
+  },
+  {
+    "id":23,
+    "name":"English Comprehension New",
+    "url":"https:\/\/www.shl.com\/products\/product-catalog\/view\/english-comprehension-new\/",
+    "test_type":"K",
+    "duration_mins":30,
+    "skills":"English",
+    "description":"Technical skills assessment measuring knowledge and proficiency in English Comprehension New"
+  },
+  {
+    "id":24,
+    "name":"Drupal New",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/drupal-new\/",
+    "test_type":"K",
+    "duration_mins":30,
+    "skills":"Drupal",
+    "description":"Technical skills assessment measuring knowledge and proficiency in Drupal New"
+  },
+  {
+    "id":25,
+    "name":"Written English V1",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/written-english-v1\/",
+    "test_type":"K",
+    "duration_mins":30,
+    "skills":"English",
+    "description":"Technical skills assessment measuring knowledge and proficiency in Written English V1"
+  },
+  {
+    "id":26,
+    "name":"Occupational Personality Questionnaire Opq32R",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/occupational-personality-questionnaire-opq32r\/",
+    "test_type":"P",
+    "duration_mins":35,
+    "skills":"General Skills",
+    "description":"Personality and behavioral assessment evaluating traits for Occupational Personality Questionnaire Opq32R"
+  },
+  {
+    "id":27,
+    "name":"Search Engine Optimization New",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/search-engine-optimization-new\/",
+    "test_type":"K",
+    "duration_mins":30,
+    "skills":"General Skills",
+    "description":"Technical skills assessment measuring knowledge and proficiency in Search Engine Optimization New"
+  },
+  {
+    "id":28,
+    "name":"Automata Selenium",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/automata-selenium\/",
+    "test_type":"K",
+    "duration_mins":30,
+    "skills":"Selenium",
+    "description":"Technical skills assessment measuring knowledge and proficiency in Automata Selenium"
+  },
+  {
+    "id":29,
+    "name":"Professional 7 1 Solution",
+    "url":"https:\/\/www.shl.com\/products\/product-catalog\/view\/professional-7-1-solution\/",
+    "test_type":"K",
+    "duration_mins":30,
+    "skills":"General Skills",
+    "description":"Technical skills assessment measuring knowledge and proficiency in Professional 7 1 Solution"
+  },
+  {
+    "id":30,
+    "name":"Javascript New",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/javascript-new\/",
+    "test_type":"K",
+    "duration_mins":35,
+    "skills":"Java, JavaScript",
+    "description":"Technical skills assessment measuring knowledge and proficiency in Javascript New"
+  },
+  {
+    "id":31,
+    "name":"Htmlcss New",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/htmlcss-new\/",
+    "test_type":"K",
+    "duration_mins":30,
+    "skills":"General Skills",
+    "description":"Technical skills assessment measuring knowledge and proficiency in Htmlcss New"
+  },
+  {
+    "id":32,
+    "name":"Css3 New",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/css3-new\/",
+    "test_type":"K",
+    "duration_mins":30,
+    "skills":"General Skills",
+    "description":"Technical skills assessment measuring knowledge and proficiency in Css3 New"
+  },
+  {
+    "id":33,
+    "name":"Selenium New",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/selenium-new\/",
+    "test_type":"K",
+    "duration_mins":30,
+    "skills":"Selenium",
+    "description":"Technical skills assessment measuring knowledge and proficiency in Selenium New"
+  },
+  {
+    "id":34,
+    "name":"Sql Server New",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/sql-server-new\/",
+    "test_type":"K",
+    "duration_mins":35,
+    "skills":"SQL",
+    "description":"Technical skills assessment measuring knowledge and proficiency in Sql Server New"
+  },
+  {
+    "id":35,
+    "name":"Automata Sql New",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/automata-sql-new\/",
+    "test_type":"K",
+    "duration_mins":35,
+    "skills":"SQL",
+    "description":"Technical skills assessment measuring knowledge and proficiency in Automata Sql New"
+  },
+  {
+    "id":36,
+    "name":"Manual Testing New",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/manual-testing-new\/",
+    "test_type":"K",
+    "duration_mins":30,
+    "skills":"General Skills",
+    "description":"Technical skills assessment measuring knowledge and proficiency in Manual Testing New"
+  },
+  {
+    "id":37,
+    "name":"Administrative Professional Short Form",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/administrative-professional-short-form\/",
+    "test_type":"K",
+    "duration_mins":20,
+    "skills":"General Skills",
+    "description":"Technical skills assessment measuring knowledge and proficiency in Administrative Professional Short Form"
+  },
+  {
+    "id":38,
+    "name":"Verify Numerical Ability",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/verify-numerical-ability\/",
+    "test_type":"A",
+    "duration_mins":30,
+    "skills":"General Skills",
+    "description":"Cognitive ability test measuring reasoning and problem-solving for Verify Numerical Ability"
+  },
+  {
+    "id":39,
+    "name":"Financial Professional Short Form",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/financial-professional-short-form\/",
+    "test_type":"K",
+    "duration_mins":20,
+    "skills":"General Skills",
+    "description":"Technical skills assessment measuring knowledge and proficiency in Financial Professional Short Form"
+  },
+  {
+    "id":40,
+    "name":"Bank Administrative Assistant Short Form",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/bank-administrative-assistant-short-form\/",
+    "test_type":"K",
+    "duration_mins":20,
+    "skills":"General Skills",
+    "description":"Technical skills assessment measuring knowledge and proficiency in Bank Administrative Assistant Short Form"
+  },
+  {
+    "id":41,
+    "name":"General Entry Level Data Entry 7 0 Solution",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/general-entry-level-data-entry-7-0-solution\/",
+    "test_type":"K",
+    "duration_mins":20,
+    "skills":"Data Entry",
+    "description":"Technical skills assessment measuring knowledge and proficiency in General Entry Level Data Entry 7 0 Solution"
+  },
+  {
+    "id":42,
+    "name":"Basic Computer Literacy Windows 10 New",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/basic-computer-literacy-windows-10-new\/",
+    "test_type":"K",
+    "duration_mins":30,
+    "skills":"General Skills",
+    "description":"Technical skills assessment measuring knowledge and proficiency in Basic Computer Literacy Windows 10 New"
+  },
+  {
+    "id":43,
+    "name":"Manager 8 0 Jfa 4310",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/manager-8-0-jfa-4310\/",
+    "test_type":"K",
+    "duration_mins":30,
+    "skills":"General Skills",
+    "description":"Technical skills assessment measuring knowledge and proficiency in Manager 8 0 Jfa 4310"
+  },
+  {
+    "id":44,
+    "name":"Microsoft Excel 365 Essentials New",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/microsoft-excel-365-essentials-new\/",
+    "test_type":"K",
+    "duration_mins":30,
+    "skills":"Excel",
+    "description":"Technical skills assessment measuring knowledge and proficiency in Microsoft Excel 365 Essentials New"
+  },
+  {
+    "id":45,
+    "name":"Digital Advertising New",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/digital-advertising-new\/",
+    "test_type":"K",
+    "duration_mins":30,
+    "skills":"General Skills",
+    "description":"Technical skills assessment measuring knowledge and proficiency in Digital Advertising New"
+  },
+  {
+    "id":46,
+    "name":"Writex Email Writing Sales New",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/writex-email-writing-sales-new\/",
+    "test_type":"B",
+    "duration_mins":30,
+    "skills":"Sales",
+    "description":"Situational judgment test assessing decision-making for Writex Email Writing Sales New"
+  },
+  {
+    "id":47,
+    "name":"Shl Verify Interactive Numerical Calculation",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/shl-verify-interactive-numerical-calculation\/",
+    "test_type":"A",
+    "duration_mins":30,
+    "skills":"General Skills",
+    "description":"Cognitive ability test measuring reasoning and problem-solving for Shl Verify Interactive Numerical Calculation"
+  },
+  {
+    "id":48,
+    "name":"Professional 7 1 Solution",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/professional-7-1-solution\/",
+    "test_type":"K",
+    "duration_mins":30,
+    "skills":"General Skills",
+    "description":"Technical skills assessment measuring knowledge and proficiency in Professional 7 1 Solution"
+  },
+  {
+    "id":49,
+    "name":"Sql Server Analysis Services (Ssas) (New)",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/sql-server-analysis-services-%28ssas%29-%28new%29\/",
+    "test_type":"K",
+    "duration_mins":35,
+    "skills":"SQL",
+    "description":"Technical skills assessment measuring knowledge and proficiency in Sql Server Analysis Services (Ssas) (New)"
+  },
+  {
+    "id":50,
+    "name":"Python New",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/python-new\/",
+    "test_type":"K",
+    "duration_mins":35,
+    "skills":"Python",
+    "description":"Technical skills assessment measuring knowledge and proficiency in Python New"
+  },
+  {
+    "id":51,
+    "name":"Tableau New",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/tableau-new\/",
+    "test_type":"K",
+    "duration_mins":30,
+    "skills":"General Skills",
+    "description":"Technical skills assessment measuring knowledge and proficiency in Tableau New"
+  },
+  {
+    "id":52,
+    "name":"Microsoft Excel 365 New",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/microsoft-excel-365-new\/",
+    "test_type":"K",
+    "duration_mins":30,
+    "skills":"Excel",
+    "description":"Technical skills assessment measuring knowledge and proficiency in Microsoft Excel 365 New"
+  },
+  {
+    "id":53,
+    "name":"Professional 7 0 Solution 3958",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/professional-7-0-solution-3958\/",
+    "test_type":"K",
+    "duration_mins":30,
+    "skills":"General Skills",
+    "description":"Technical skills assessment measuring knowledge and proficiency in Professional 7 0 Solution 3958"
+  },
+  {
+    "id":54,
+    "name":"Data Warehousing Concepts",
+    "url":"https:\/\/www.shl.com\/solutions\/products\/product-catalog\/view\/data-warehousing-concepts\/",
+    "test_type":"K",
+    "duration_mins":30,
+    "skills":"General Skills",
+    "description":"Technical skills assessment measuring knowledge and proficiency in Data Warehousing Concepts"
+  }
+]

@@ -126,8 +126,8 @@ def main():
     print("="*80)
     
     # Load training data
-    train_df = pd.read_excel('../data/Gen_AI-Dataset.xlsx', sheet_name='Train-Set')
-    test_df = pd.read_excel('../data/Gen_AI-Dataset.xlsx', sheet_name='Test-Set')
+    train_df = pd.read_excel('./data/Gen_AI-Dataset.xlsx', sheet_name='Train-Set')
+    test_df = pd.read_excel('./data/Gen_AI-Dataset.xlsx', sheet_name='Test-Set')
     
     print(f"\n✅ Loaded {len(train_df)} training samples")
     print(f"✅ Loaded {len(test_df)} test queries")
@@ -172,8 +172,8 @@ def main():
     assessments_df.to_json('../data/assessments_enriched_db.json', orient='records', indent=2)
     
     print(f"\n✅ Saved {len(assessments_df)} assessments to:")
-    print("   - ../data/assessments_enriched_db.csv")
-    print("   - ../data/assessments_enriched_db.json")
+    print("   - ./data/assessments_enriched_db.csv")
+    print("   - ./data/assessments_enriched_db.json")
     
     # Show sample assessments
     print("\n📋 Sample Assessments:")

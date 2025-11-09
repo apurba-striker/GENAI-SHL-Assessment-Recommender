@@ -7,7 +7,7 @@ from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 
 class AssessmentRecommender:
-    def __init__(self, db_path='../data/assessments_enriched_db.csv'):
+    def __init__(self, db_path='./data/assessments_enriched_db.csv'):
         """Initialize recommender with Sentence-Transformers"""
         self.assessments_df = pd.read_csv(db_path)
         
@@ -40,12 +40,12 @@ class AssessmentRecommender:
         print(f"✅ Built embeddings index: {self.assessment_vectors.shape}")
         
         # Save embeddings
-        os.makedirs('../models', exist_ok=True)
-        with open('../models/transformer_embeddings.pkl', 'wb') as f:
+        os.makedirs('./models', exist_ok=True)
+        with open('./models/transformer_embeddings.pkl', 'wb') as f:
             pickle.dump(self.assessment_vectors, f)
         print("✅ Saved embeddings to ../models/transformer_embeddings.pkl")
     
-    def load_embeddings(self, path='../models/transformer_embeddings.pkl'):
+    def load_embeddings(self, path='./models/transformer_embeddings.pkl'):
         """Load pre-computed embeddings"""
         if os.path.exists(path):
             with open(path, 'rb') as f:

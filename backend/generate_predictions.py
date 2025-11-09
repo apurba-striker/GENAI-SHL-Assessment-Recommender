@@ -158,8 +158,8 @@ def main():
     print("="*80)
     
     # Load data
-    train_df = pd.read_excel('../data/Gen_AI-Dataset.xlsx', sheet_name='Train-Set')
-    test_df = pd.read_excel('../data/Gen_AI-Dataset.xlsx', sheet_name='Test-Set')
+    train_df = pd.read_excel('./data/Gen_AI-Dataset.xlsx', sheet_name='Train-Set')
+    test_df = pd.read_excel('./data/Gen_AI-Dataset.xlsx', sheet_name='Test-Set')
     
     print(f"\n📊 Data Loaded:")
     print(f"   Training: {len(train_df)} rows ({train_df['Query'].nunique()} unique queries)")
@@ -182,7 +182,7 @@ def main():
     print("EVALUATION COMPLETE")
     print('='*80)
     print(f" Mean Recall@10: {mean_recall:.4f} ({mean_recall*100:.1f}%)")
-    print(f" Test Predictions: ../data/test_predictions.csv")
+    print(f" Test Predictions: ./data/test_predictions.csv")
     print(f" Total Predictions: {len(predictions_df)}")
     print(f" Ready for submission!")
     print('='*80)
