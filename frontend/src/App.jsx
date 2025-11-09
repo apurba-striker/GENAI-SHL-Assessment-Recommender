@@ -2,7 +2,7 @@ import { useState } from 'react'
 import axios from 'axios'
 import './App.css'
 
-const API_URL = 'http://localhost:8000'
+const API_URL = 'https://genai-shl-assessment-recommender-z3v7.onrender.com/'
 
 function App() {
   const [query, setQuery] = useState('')
@@ -22,7 +22,7 @@ function App() {
       const response = await axios.post(`${API_URL}/recommend`, { query })
       setRecommendations(response.data.recommendations)
     } catch (err) {
-      setError('⚠️ Failed to fetch recommendations. Please try again.')
+      setError(' Failed to fetch recommendations. Please try again.')
       console.error(err)
     } finally {
       setLoading(false)
@@ -40,7 +40,7 @@ function App() {
     <div className="app">
       <div className="glass-card">
         <header>
-          <h1>🧭 SHL Assessment Recommender</h1>
+          <h1>SHL Assessment Recommender</h1>
           <p>Discover the perfect assessments for your hiring needs</p>
         </header>
 
@@ -52,7 +52,7 @@ function App() {
             rows="4"
           />
           <button type="submit" disabled={loading}>
-            {loading ? '⏳ Searching...' : '🚀 Get Recommendations'}
+            {loading ? 'Searching...' : 'Get Recommendations'}
           </button>
         </form>
 
@@ -60,7 +60,7 @@ function App() {
 
         {recommendations.length > 0 && (
           <div className="results">
-            <h2>✨ Top {recommendations.length} Recommendations</h2>
+            <h2> Top {recommendations.length} Recommendations</h2>
             <div className="table-wrapper">
               <table>
                 <thead>

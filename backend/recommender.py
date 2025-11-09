@@ -13,7 +13,7 @@ class AssessmentRecommender:
         
         print("🔨 Loading Sentence-Transformer model (all-MiniLM-L6-v2)...")
         self.model = SentenceTransformer('all-MiniLM-L6-v2')
-        print("✅ Model loaded successfully")
+        print(" Model loaded successfully")
         
         # Try to load pre-computed embeddings
         if not self.load_embeddings():
@@ -21,7 +21,7 @@ class AssessmentRecommender:
     
     def _build_embeddings_index(self):
         """Build semantic search index using transformer embeddings"""
-        print("🔨 Building embeddings index...")
+        print(" Building embeddings index...")
         
         # Create rich search texts (emphasize name and skills)
         search_texts = self.assessments_df.apply(
@@ -37,20 +37,20 @@ class AssessmentRecommender:
             normalize_embeddings=True  # Normalize for cosine similarity
         )
         
-        print(f"✅ Built embeddings index: {self.assessment_vectors.shape}")
+        print(f" Built embeddings index: {self.assessment_vectors.shape}")
         
         # Save embeddings
         os.makedirs('./models', exist_ok=True)
         with open('./models/transformer_embeddings.pkl', 'wb') as f:
             pickle.dump(self.assessment_vectors, f)
-        print("✅ Saved embeddings to ../models/transformer_embeddings.pkl")
+        print(" Saved embeddings to ../models/transformer_embeddings.pkl")
     
     def load_embeddings(self, path='./models/transformer_embeddings.pkl'):
         """Load pre-computed embeddings"""
         if os.path.exists(path):
             with open(path, 'rb') as f:
                 self.assessment_vectors = pickle.load(f)
-            print(f"✅ Loaded pre-computed embeddings from {path}")
+            print(f"Loaded pre-computed embeddings from {path}")
             return True
         return False
     
@@ -187,12 +187,12 @@ if __name__ == "__main__":
     
     for query in test_queries:
         print(f"\n{'='*80}")
-        print(f"📝 Query: {query}")
+        print(f" Query: {query}")
         print('='*80)
         
         recs = recommender.recommend(query)
         
-        print(f"\n🎯 Top {len(recs)} Recommendations:\n")
+        print(f"\n Top {len(recs)} Recommendations:\n")
         for i, r in enumerate(recs, 1):
             print(f"{i}. {r['name']}")
             print(f"   Type: {r['test_type']} | Duration: {r['duration_mins']}min | Score: {r['similarity']:.4f}")
@@ -200,5 +200,5 @@ if __name__ == "__main__":
             print()
     
     print("="*80)
-    print("✅ ALL TESTS PASSED")
+    print(" ALL TESTS PASSED")
     print("="*80)

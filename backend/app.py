@@ -5,13 +5,11 @@ from typing import List
 from recommender import AssessmentRecommender
 import uvicorn
 
-# Initialize FastAPI
 app = FastAPI(
     title="SHL Assessment Recommender API",
     description="AI-powered assessment recommendation system using transformer embeddings",
 )
 
-# CORS middleware
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # In production, specify exact origins
@@ -20,12 +18,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Initialize recommender
 print("🚀 Initializing Assessment Recommender...")
 recommender = AssessmentRecommender(db_path='./data/assessments_enriched_db.csv')
-print("✅ Recommender ready!")
+print(" Recommender ready!")
 
-# Request/Response models
 class QueryRequest(BaseModel):
     query: str
 
@@ -81,10 +77,8 @@ def get_recommendations(request: QueryRequest):
         if not request.query or not request.query.strip():
             raise HTTPException(status_code=400, detail="Query cannot be empty")
         
-        # Get recommendations
         recommendations = recommender.recommend(request.query, top_k=10)
         
-        # Format response
         formatted_recs = [
             AssessmentResponse(
                 name=rec['name'],
@@ -109,10 +103,10 @@ def get_recommendations(request: QueryRequest):
 
 if __name__ == "__main__":
     print("\n" + "="*80)
-    print("🚀 STARTING SHL ASSESSMENT RECOMMENDER API")
+    print(" STARTING SHL ASSESSMENT RECOMMENDER API")
     print("="*80)
-    print("📍 API will be available at: http://localhost:8000")
-    print("📚 Docs available at: http://localhost:8000/docs")
+    print(" API will be available at: http://localhost:8000")
+    print(" Docs available at: http://localhost:8000/docs")
     print("="*80 + "\n")
     
     uvicorn.run("app:app", host="0.0.0.0", port=8000, reload=True)

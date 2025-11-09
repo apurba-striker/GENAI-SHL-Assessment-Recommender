@@ -7,7 +7,6 @@ def extract_assessment_name(url):
     match = re.search(r'/view/([^/]+)/?$', url)
     if match:
         name = match.group(1)
-        # Clean URL encoding
         name = name.replace('%28', '(').replace('%29', ')')
         name = name.replace('%2528', '(').replace('%2529', ')')
         return name.replace('-', ' ').title()
@@ -22,31 +21,24 @@ def classify_assessment_type(name):
     B = Biodata & SJT (situational judgment)
     """
     name_lower = name.lower()
-    
-    # Technical/Knowledge tests
     if any(w in name_lower for w in ['java', 'python', 'sql', 'javascript', 'js',
                                       'programming', 'coding', 'excel', 'technical',
                                       'development', 'ado.net', 'ssas', 'ssis',
                                       'drupal', 'automation', 'selenium']):
         return 'K'
     
-    # Personality/Behavioral
     if any(w in name_lower for w in ['personality', 'opq', 'communication',
                                       'leadership', 'interpersonal', 'behavior',
                                       'emotional', 'motivation', 'culture']):
         return 'P'
     
-    # Cognitive/Aptitude
     if any(w in name_lower for w in ['cognitive', 'numerical', 'verbal',
                                       'reasoning', 'aptitude', 'verify',
                                       'logical', 'abstract', 'general ability']):
         return 'A'
     
-    # Sales/SJT
     if 'sales' in name_lower:
         return 'B'
-    
-    # Default to Knowledge
     return 'K'
 
 def estimate_duration(name):
@@ -71,7 +63,6 @@ def extract_skills(name):
     name_lower = name.lower()
     skills = []
     
-    # Programming languages
     skill_map = {
         'java': 'Java',
         'python': 'Python',
@@ -91,7 +82,6 @@ def extract_skills(name):
             if value not in skills:
                 skills.append(value)
     
-    # Soft skills
     if 'communication' in name_lower:
         skills.append('Communication')
     if 'leadership' in name_lower:
@@ -125,18 +115,15 @@ def main():
     print("BUILDING SHL ASSESSMENT DATABASE")
     print("="*80)
     
-    # Load training data
     train_df = pd.read_excel('./data/Gen_AI-Dataset.xlsx', sheet_name='Train-Set')
     test_df = pd.read_excel('./data/Gen_AI-Dataset.xlsx', sheet_name='Test-Set')
     
-    print(f"\n✅ Loaded {len(train_df)} training samples")
-    print(f"✅ Loaded {len(test_df)} test queries")
+    print(f"\n Loaded {len(train_df)} training samples")
+    print(f"Loaded {len(test_df)} test queries")
     
-    # Extract unique assessment URLs
     assessment_urls = train_df['Assessment_url'].unique()
-    print(f"\n📊 Found {len(assessment_urls)} unique assessments")
+    print(f"\nFound {len(assessment_urls)} unique assessments")
     
-    # Build enriched database
     assessments = []
     for idx, url in enumerate(assessment_urls, 1):
         name = extract_assessment_name(url)
@@ -154,8 +141,7 @@ def main():
     
     assessments_df = pd.DataFrame(assessments)
     
-    # Display distribution
-    print("\n📈 Test Type Distribution:")
+    print("\n Test Type Distribution:")
     type_counts = assessments_df['test_type'].value_counts()
     type_names = {
         'K': 'Knowledge & Skills',
@@ -166,17 +152,15 @@ def main():
     for test_type, count in type_counts.items():
         print(f"   {test_type} ({type_names.get(test_type, 'Other')}): {count}")
     
-    # Save to files
     os.makedirs('../data', exist_ok=True)
     assessments_df.to_csv('../data/assessments_enriched_db.csv', index=False)
     assessments_df.to_json('../data/assessments_enriched_db.json', orient='records', indent=2)
     
-    print(f"\n✅ Saved {len(assessments_df)} assessments to:")
+    print(f"\n Saved {len(assessments_df)} assessments to:")
     print("   - ./data/assessments_enriched_db.csv")
     print("   - ./data/assessments_enriched_db.json")
     
-    # Show sample assessments
-    print("\n📋 Sample Assessments:")
+    print("\n Sample Assessments:")
     for idx in [0, 5, 10]:
         if idx < len(assessments_df):
             row = assessments_df.iloc[idx]
@@ -185,7 +169,7 @@ def main():
             print(f"   Skills: {row['skills']}")
     
     print("\n" + "="*80)
-    print("DATABASE BUILD COMPLETE ✅")
+    print("DATABASE BUILD COMPLETE ")
     print("="*80)
 
 if __name__ == "__main__":
