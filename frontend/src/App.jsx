@@ -2,7 +2,7 @@ import { useState } from 'react'
 import axios from 'axios'
 import './App.css'
 
-const API_URL = 'https://genai-shl-assessment-recommender-z3v7.onrender.com/'
+const API_URL = 'https://genai-shl-assessment-recommender-z3v7.onrender.com'
 
 function App() {
   const [query, setQuery] = useState('')
@@ -20,20 +20,14 @@ function App() {
 
     try {
       const response = await axios.post(`${API_URL}/recommend`, { query })
-      setRecommendations(response.data.recommendations)
+      // New API returns { recommended_assessments: [...] }
+      setRecommendations(response.data.recommended_assessments || [])
     } catch (err) {
-      setError(' Failed to fetch recommendations. Please try again.')
+      setError('Failed to fetch recommendations. Please try again.')
       console.error(err)
     } finally {
       setLoading(false)
     }
-  }
-
-  const testTypeNames = {
-    K: 'Knowledge & Skills',
-    P: 'Personality & Behavior',
-    A: 'Ability & Aptitude',
-    B: 'Biodata & SJT',
   }
 
   return (
@@ -60,7 +54,7 @@ function App() {
 
         {recommendations.length > 0 && (
           <div className="results">
-            <h2> Top {recommendations.length} Recommendations</h2>
+            <h2>Top {recommendations.length} Recommendations</h2>
             <div className="table-wrapper">
               <table>
                 <thead>
@@ -69,8 +63,9 @@ function App() {
                     <th>Assessment</th>
                     <th>Type</th>
                     <th>Duration</th>
-                    <th>Skills</th>
-                    <th>Score</th>
+                    <th>Adaptive</th>
+                    <th>Remote</th>
+                    <th>Description</th>
                     <th>Link</th>
                   </tr>
                 </thead>
@@ -80,17 +75,22 @@ function App() {
                       <td>{idx + 1}</td>
                       <td>{rec.name}</td>
                       <td>
-                        <span className={`badge type-${rec.test_type}`}>
-                          {testTypeNames[rec.test_type] || rec.test_type}
-                        </span>
+                        {(rec.test_type || []).map((t) => (
+                          <span className="badge" key={t}>{t}</span>
+                        ))}
                       </td>
-                      <td>{rec.duration_mins} min</td>
-                      <td>{rec.skills}</td>
+                      <td>{rec.duration} min</td>
                       <td>
-                        <span className="score">
-                          {(rec.relevance_score * 100).toFixed(1)}%
+                        <span className={`badge ${rec.adaptive_support === 'Yes' ? "badge-green" : "badge-red"}`}>
+                          {rec.adaptive_support}
                         </span>
                       </td>
+                      <td>
+                        <span className={`badge ${rec.remote_support === 'Yes' ? "badge-green" : "badge-red"}`}>
+                          {rec.remote_support}
+                        </span>
+                      </td>
+                      <td style={{ maxWidth: 240 }}>{rec.description}</td>
                       <td>
                         <a href={rec.url} target="_blank" rel="noopener noreferrer">
                           View →
